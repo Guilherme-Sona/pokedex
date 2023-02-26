@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="pokedex">
+      <div class="pokedex__header">
+        <h1 class="pokedex__title">Pokedex</h1>
+        <input
+          type="text"
+          id="pokeNumberInput"
+          placeholder="Digite o Numero do pokemon desejado"
+        />
+        <button onclick="searchPokemon()">Pesquisar</button>
+      </div>
+      <div class="pokedex__body">
+        <div class="pokedex__screen">
+          <img src="" alt="" class="pokedex__image" />
+        </div>
+        <div class="pokedex__info">
+          <h2 class="pokedex__name"></h2>
+          <div class="pokedex__stats">
+            <div class="pokedex__stat">
+              <span class="pokedex__label">Height:</span>
+              <span class="pokedex__value" id="height"></span>
+            </div>
+            <div class="pokedex__stat">
+              <span class="pokedex__label">Weight:</span>
+              <span class="pokedex__value" id="weight"></span>
+            </div>
+            <div class="pokedex__stat">
+              <span class="pokedex__label">Type:</span>
+              <span class="pokedex__value" id="type"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

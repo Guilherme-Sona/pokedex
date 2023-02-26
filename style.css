@@ -1,0 +1,105 @@
+/* Variáveis CSS */
+:root {
+  --color-primary: #ffcb05;
+  --color-secondary: #2c2e43;
+  --color-tertiary: #ededf2;
+  --color-accent: #d8483e;
+  --color-success: #64bc64;
+  --font-size-title: 2rem;
+  --font-weight-bold: bold;
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  --transition-duration: 0.2s;
+}
+
+/* Estilos da Pokedex */
+.pokedex {
+  align-items: center;
+  background: linear-gradient(
+    to bottom right,
+    var(--color-primary),
+    var(--color-tertiary)
+  );
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.pokedex__header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.pokedex__image {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.pokedex__info {
+  align-items: center;
+  background-color: var(--color-tertiary);
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.pokedex__label {
+  font-weight: var(--font-weight-bold);
+}
+
+.pokedex__name {
+  color: var(--color-secondary);
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 10px;
+  text-align: center;
+  text-shadow: 1px 1px 2px var(--color-tertiary);
+}
+
+.pokedex__screen {
+  align-items: center;
+  background-color: var(--color-tertiary);
+  border-radius: 20px;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: transform var(--transition-duration);
+  width: 200px;
+  height: 200px;
+}
+
+.pokedex__screen:hover {
+  transform: scale(1.05);
+}
+
+.pokedex__stat {
+  color: var(--color-secondary);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.pokedex__stats {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.loading {
+  opacity: 0.5;
+}
+
+.title {
+  color: var(--color-secondary);
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-bold);
+  text-shadow: 1px 1px 2px var(--color-tertiary);
+}
